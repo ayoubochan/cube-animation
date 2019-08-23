@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(rgba(10, 66, 45, 0.644), rgba(4, 255, 159, 0.644));
+  position: relative;
+  animation: color 8s linear;
+}
+
+img {
+  position: absolute;
+  height: 100px;
+  background-color: rgba(133, 0, 0, 0.644);
+  animation: move 8s linear;
+  right: 0;
+}
+
+@keyframes color {
+  0%{
+    background: linear-gradient(rgba(10, 66, 45, 0.644), rgba(4, 255, 159, 0.644));
+  }
+  25%{
+    background: linear-gradient(rgba(73, 16, 16, 0.644), rgba(255, 2, 2, 0.644));
+  }
+  50%{
+    background: linear-gradient(rgba(105, 104, 18, 0.644), rgba(251, 255, 22, 0.644));
+  }
+  75%{
+    background: linear-gradient(rgba(17, 73, 15, 0.644), rgba(64, 255, 39, 0.644));
+  }
+  100%{
+    background: linear-gradient(rgba(10, 66, 45, 0.644), rgba(4, 255, 159, 0.644));
+  }
+}
+
+@keyframes move {
+  0% {
+    right: 100%
+  }
+  100%{
+    right: 0;
+  }
+}
