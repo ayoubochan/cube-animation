@@ -9,7 +9,6 @@ body {
 img {
   position: absolute;
   height: 100px;
-  background-color: rgba(133, 0, 0, 0.644);
   animation: move 8s linear;
   right: 0;
 }
